@@ -14,11 +14,18 @@ body {
     margin: 0;
 }
 
-/* target .bg -> set background to take whole screen, position absolute for top and bottom values, 
-set top and left a little off screen to account for starting blur, set width and height to the calc
-with 100 values + double the offset of top and left, z-index to keep image behind text,
-filter set to blur with initial blur to 0
-*/
+.bg {
+    background: url('https://images.unsplash.com/photo-1576161787924-01bb08dad4a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2104&q=80') no-repeat center center/cover;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    position: absolute;
+    left: -30;
+    top: -30;
+    filter: blur(30px);
+}
 
-
-/* target .loading-text -> size 50, color white */
+.loading-text {
+    font-size: 50px;
+    color: #fff;
+}
