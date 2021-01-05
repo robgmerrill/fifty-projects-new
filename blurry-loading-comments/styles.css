@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* target .bg -> set background to take whole screen, position absolute for top and bottom values, 
+set top and left a little off screen to account for starting blur, set width and height to the calc
+with 100 values + double the offset of top and left, z-index to keep image behind text,
+filter set to blur with initial blur to 0
+*/
+
+
+/* target .loading-text -> size 50, color white */
